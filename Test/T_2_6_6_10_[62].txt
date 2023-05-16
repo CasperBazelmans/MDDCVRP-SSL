@@ -1,0 +1,35 @@
+T_2_6_6_10_[62] 2 4 12 8
+
+[Vehicle Types] - ID_veh_type, fixed_cost, variable_cost, Speed, Capacity, alpha, beta, max_time, max_drive_time
+           0         150           1          80        3200        2400        2800       54000       22000
+           1         200        1.25          50       13600       11200       12800       54000       32400
+
+[Number of Vehicle Types] - ID_veh_type, ID_depot, number_of_vehicles
+           0           0           2
+           1           0           1
+           0           1           2
+           1           1           1
+
+[Scheduled Lines] - ID_from, ID_to, cost_per_req, capacity, dep_time, arr_time
+           0           1          10       12000        2152        2931
+           0           1          10       12000       13507       14286
+           0           1          10       12000       23650       24429
+           0           1          10       12000       55839       56618
+           0           1          10       12000       67251       68030
+           0           1          10       12000       76518       77297
+           1           0          10       12000        7558        8337
+           1           0          10       12000       16365       17144
+           1           0          10       12000       25601       26380
+           1           0          10       12000       54674       55453
+           1           0          10       12000       68808       69587
+           1           0          10       12000       71710       72489
+
+[Nodes/requests]: ID_node, ID_depot, lat, long, type, service_time, q_del, q_col, tw_depot_start, tw_depot_end, tw_cust_start, tw_cust_end
+           0           0      52.170       5.081       depot           0           0           0           0       86400           0       86400
+           1           1      52.095       5.047       depot           0           0           0           0       86400           0       86400
+           2           0      52.177       4.942  distribute        2400         610           0        6885       86400       34042       64800
+           3           0      52.137       4.952     collect        1440           0        4840           0       82478       37452       64800
+           4           0      52.201       5.154  distribute        1320         152           0       10701       86400       30173       64800
+           5           1      52.171       5.047     collect        2040           0        1284           0       80698       26278       31640
+           6           1      52.051       4.859     collect        1440           0        1106           0       84624       27708       64800
+           7           0      52.151       4.927  distribute        2160        1316           0       16419       86400       41398       64800
